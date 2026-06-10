@@ -20,6 +20,29 @@ window.addEventListener("scroll", () => {
 });
 
 // =============================
+// MOBILE RESPONSIVE TEXT
+// =============================
+
+function updateMobileText() {
+    const bookBtn = document.querySelector(".book-btn");
+    const tagline = document.querySelector(".tagline");
+    const sectionH2 = document.querySelector(".section h2");
+    
+    if (window.innerWidth <= 768) {
+        bookBtn.textContent = "BOOK NOW";
+        if (tagline) tagline.style.display = "none";
+        if (sectionH2) sectionH2.textContent = "THE PLAY COVE - FUN-FILLED ACTIVITIES FOR KIDS AND TODDLERS";
+    } else {
+        bookBtn.textContent = "PARTY BOOKING";
+        if (tagline) tagline.style.display = "block";
+        if (sectionH2) sectionH2.textContent = "Welcome to Play Cove";
+    }
+}
+
+window.addEventListener("load", updateMobileText);
+window.addEventListener("resize", updateMobileText);
+
+// =============================
 // CARD SCROLL ANIMATION
 // =============================
 
