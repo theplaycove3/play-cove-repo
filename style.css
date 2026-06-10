@@ -621,6 +621,20 @@ height:60px;
 
 .book-btn{
 padding:12px 18px;
+font-size:0.85rem;
+}
+
+nav a:nth-child(1),
+nav a:nth-child(2){
+display:none;
+}
+
+.floating-whatsapp{
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+font-size:26px;
 }
 
 }
