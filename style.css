@@ -139,10 +139,10 @@ nav a:hover{
 
 .tagline{
     font-size:1rem;
-    font-weight:600;
+    font-weight:700;
     text-align:center;
     margin-bottom:15px;
-    color:#FF6B9D;
+    color:#5A4335;
     letter-spacing:0.3px;
 }
 
@@ -414,11 +414,13 @@ nav a:hover{
 
     padding:18px 22px;
 
-    background:#f7f7f7;
+    background:#E3F2FD;
 
     border-radius:15px;
 
     margin-bottom:20px;
+
+    border-left:5px solid #5DADE2;
 
 }
 
@@ -426,6 +428,7 @@ nav a:hover{
     content:"☎ ";
     color:#5DADE2;
     font-weight:800;
+    font-size:1.4rem;
 }
 
 .phone-box h3{
@@ -433,6 +436,7 @@ nav a:hover{
     margin-top:8px;
     font-weight:900;
     letter-spacing:-0.3px;
+    color:#5A4335;
 }
 
 .map-container iframe{
@@ -679,6 +683,8 @@ footer{
         font-size:1.1rem;
         margin-bottom:12px;
         font-weight:700;
+        color:#E85B8A;
+        display:block !important;
     }
 
     .title-line{
