@@ -27,11 +27,11 @@ function updateMobileText() {
     const bookBtn = document.querySelector(".book-btn");
     const tagline = document.querySelector(".tagline");
     const sectionH2 = document.querySelector(".section h2");
-    
+
     if (window.innerWidth <= 768) {
         bookBtn.textContent = "BOOK NOW";
         if (tagline) tagline.style.display = "none";
-        if (sectionH2) sectionH2.textContent = "THE PLAY COVE - FUN-FILLED ACTIVITIES FOR KIDS AND TODDLERS";
+        if (sectionH2) sectionH2.textContent = "Welcome to Play Cove";
     } else {
         bookBtn.textContent = "PARTY BOOKING";
         if (tagline) tagline.style.display = "block";
@@ -50,23 +50,23 @@ const cards = document.querySelectorAll(".card");
 
 const cardObserver = new IntersectionObserver(
 
-(entries) => {
+    (entries) => {
 
-    entries.forEach((entry) => {
+        entries.forEach((entry) => {
 
-        if (entry.isIntersecting) {
+            if (entry.isIntersecting) {
 
-            entry.target.classList.add("show-card");
+                entry.target.classList.add("show-card");
 
-        }
+            }
 
-    });
+        });
 
-},
+    },
 
-{
-    threshold: 0.2
-}
+    {
+        threshold: 0.2
+    }
 
 );
 
@@ -83,7 +83,7 @@ cards.forEach((card) => {
 const sections = document.querySelectorAll("section");
 
 const navLinks =
-document.querySelectorAll("nav a");
+    document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
 
@@ -100,7 +100,7 @@ window.addEventListener("scroll", () => {
         if (
             pageYOffset >= sectionTop &&
             pageYOffset <
-                sectionTop + sectionHeight
+            sectionTop + sectionHeight
         ) {
             current = section.getAttribute("id");
         }
@@ -129,41 +129,41 @@ window.addEventListener("scroll", () => {
 // =============================
 
 const buttons =
-document.querySelectorAll(
-".book-btn,.call-contact,.wa-contact"
-);
+    document.querySelectorAll(
+        ".book-btn,.call-contact,.wa-contact"
+    );
 
 buttons.forEach((button) => {
 
     button.addEventListener("click", function(e){
 
         const circle =
-        document.createElement("span");
+            document.createElement("span");
 
         const diameter =
-        Math.max(
-            this.clientWidth,
-            this.clientHeight
-        );
+            Math.max(
+                this.clientWidth,
+                this.clientHeight
+            );
 
         circle.style.width =
-        circle.style.height =
-        `${diameter}px`;
+            circle.style.height =
+                `${diameter}px`;
 
         circle.style.left =
-        `${e.clientX -
-          this.offsetLeft -
-          diameter / 2}px`;
+            `${e.clientX -
+            this.offsetLeft -
+            diameter / 2}px`;
 
         circle.style.top =
-        `${e.clientY -
-          this.offsetTop -
-          diameter / 2}px`;
+            `${e.clientY -
+            this.offsetTop -
+            diameter / 2}px`;
 
         circle.classList.add("ripple");
 
         const ripple =
-        this.querySelector(".ripple");
+            this.querySelector(".ripple");
 
         if(ripple){
 
@@ -198,10 +198,10 @@ const mapContainer = document.getElementById("map-container");
 
 toggleMapBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    
+
     const addressLabel = toggleMapBtn.querySelector('a') || toggleMapBtn;
     const textNode = Array.from(toggleMapBtn.childNodes).find(node => node.nodeType === 3);
-    
+
     if (mapContainer.style.display === "none") {
         mapContainer.style.display = "block";
         if (textNode) {
