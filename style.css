@@ -676,8 +676,9 @@ footer{
     }
 
     .tagline{
-        font-size:0.9rem;
+        font-size:1.1rem;
         margin-bottom:12px;
+        font-weight:700;
     }
 
     .title-line{
